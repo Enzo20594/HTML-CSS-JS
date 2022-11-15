@@ -5,64 +5,303 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Historia</title>
+    <link rel="shortcut icon" href="./logo.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Saira:wght@300&family=Staatliches&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Quantico&family=Wallpoet&display=swap');
+        @import "compass/css3";
+
+        body {
+            background-image: url(./maxresdefault.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .white {
+            color: white;
+        }
+
+        .black {
+            color: black;
+        }
+
+        h1 {
+            font-family: 'Lexend Giga', sans-serif;
+            font-size: 8rem;
+            animation: fadeInLeft 2s;
+
+        }
+
+        h3,
+        h5,
+        p {
+            font-family: 'Saira', sans-serif;
+            animation: fadeInRight 2s;
+        }
+
+        h4 {
+            font-family: 'Saira', sans-serif;
+            animation: fadeInUp 2s;
+        }
+
+        .img-blur {
+            position: relative;
+            display: inline-block;
+        }
+
+        .img-blur:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            box-shadow: inset 0 0 10px 10px black;
+        }
+
+        .card {
+            background-color: #3333;
+            margin-right: 10px;
+            animation: fadeInRight 2s;
+
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: 15vw;
+            object-fit: cover;
+        }
+
+        .card-img-top2 {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .img-alissa {
+            width: 100%;
+            animation: fadeInRight 2s;
+        }
+
+        @keyframes fadeInRight {
+            0% {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    
-
-    <div class="container text-center">
-        <div class="row" style="background-color: red;">
-            Titulo
+    <nav class="navbar black mb-5 fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./logo.png" alt="" width="" height="" class="d-inline-block align-text-top">
+            </a>
         </div>
+    </nav>
 
+    <div class="container">
         <div class="row">
-            <div class="col-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Lorem Ipsum</h5>
-                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, maiores!
-                            Cumque, ipsum blanditiis tenetur possimus nulla perspiciatis? Rerum, quidem consequatur
-                            porro ex consectetur quod, tempora sint numquam optio nobis saepe.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Lorem Ipsum</h5>
-                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, maiores!
-                            Cumque, ipsum blanditiis tenetur possimus nulla perspiciatis? Rerum, quidem consequatur
-                            porro ex consectetur quod, tempora sint numquam optio nobis saepe.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Lorem Ipsum</h5>
-                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, maiores!
-                            Cumque, ipsum blanditiis tenetur possimus nulla perspiciatis? Rerum, quidem consequatur
-                            porro ex consectetur quod, tempora sint numquam optio nobis saepe.</p>
-                    </div>
-                </div>
+            <div class="col-12">
+                <h1 class="white text-center mt-5 mb-5"><b>HISTORIA</b></h1>
             </div>
         </div>
+    </div>
 
+    <div class="container mt-5">
         <div class="row">
-            <div class="col-sm-3" style="background-color: blue; margin-top: 5px;">
-                col 3
-            </div>
-            <div class="col-sm-4"></div>
-            <div class="col-sm-5" style="background-color: blue; padding: 20px; margin-top: 5px;">
-                col 5
+            <div class="card-group">
+                <div class="card">
+                    <img src="./earth.webp" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title white text-center"><b>Contexto</b></h5>
+                        <p class="card-text white">Dead Space toma lugar en el año 2508. La Tierra ha pasado a través de
+                            un evento a nivel de extinción, causado por el voraz e insostenible uso y explotación de los
+                            recursos naturales del planeta. Los humanos restantes se dieron cuenta de que la única forma
+                            de obtener esos recursos, esenciales para seguir subsistiendo,
+                            era recurrir a las estrellas y tomándolos de otros planetas.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./concordance.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title white text-center"><b>CEC</b></h5>
+                        <p class="card-text white">Ahí es cuando aparece la Concordance Extraction Corporation, una
+                            inmensa corporación mercantil y promotora de la minería en el espacio profundo. En esos
+                            tiempos de desesperación, la C.E.C., como es conocida, inventó
+                            y fabricó la nave que posteriormente salvaría a toda la humanidad: La USG Ishimura.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./usg_ishimura.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title white text-center"><b>USG Ishimura</b></h5>
+                        <p class="card-text white">La USG Ishimura fue diseñada para iniciar la nueva forma de
+                            extracción y abastecimiento de recursos: La Excavación Planetaria. El trabajo de la Ishimura
+                            era minar aquellos planetas
+                            en los que se hubieran detectado los más raros y valiosos recursos para llevarlos de vuelta
+                            a la Tierra.
+                            Gracias a la Excavación Planetaria, la humanidad sigue en pie, los avances tecnológicos son
+                            amplios y los recursos son abundantes.
+                            Hasta el comienzo de la historia, La Ishimura ha hecho 34 excavaciones exitosas, y está en
+                            proceso de comenzar la número 35.
+                            Sin embargo, los eventos que toman lugar durante esta excavación son eventos que amenazan a
+                            la humanidad misma.</p>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-6">
+                <h3 class="white"><b>Dead Space: Downfall</b></h3>
+                <p class="white">Dead Space: Downfall (en español Dead Space: Perdición)
+                    es una película de animación de horror que sirve de precuela al videojuego Dead Space.
+                    Ésta muestra los eventos que conducen al comienzo del primer juego de Dead Space y cómo la infección
+                    de los Necromorfos
+                    se extendió a la USG Ishimura desde la colonia minera de Aegis VII.</p>
+                <div class="card mb-5 mt-5">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./Alissa_Movie.JPG.webp" class="card-img-top2" alt="">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title white"><b>Comienzo</b></h5>
+                                <p class="card-text white">Una pantalla cruje a la vida cuando una agotada Alissa
+                                    Vincent se sienta en la silla frente al dispositivo de grabación,
+                                    explicando la caída de la Ishimura debido a una infestación de organismos
+                                    alienígenas parásitos posiblemente provocados por la perturbación de un "Artefacto"
+                                    y le dice al destinatario del mensaje que la Ishimura y el artefacto deben ser
+                                    destruidos. El mensaje termina.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-5 mt-5">
+                    <div class="row g-0">
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title white"><b>Sospecha</b></h5>
+                                <p class="card-text white">Retrocediendo en el tiempo, tres inspectores de patrullaje en
+                                    RIGs se mueven para inspeccionar la actividad sísmica inusual en la superficie del
+                                    planeta. Una semana pasa y una oleada de ataques violentos entre los mineros y otra
+                                    tripulación comienzan a
+                                    aumentar en número. Las hostilidades comienzan a estallar cuando los miembros de la
+                                    secta de la Uniología, piden una visión del Artefacto, un ícono clave en su
+                                    religión.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="./deadspacedfrig.webp" class="card-img-top2" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-5 mt-5">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./conflicto.jpg" class="card-img-top2" alt="">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title white"><b>Conflicto</b></h5>
+                                <p class="card-text white">A bordo de la Ishimura, Alissa Vincent, jefa de seguridad de
+                                    la nave, exige que el capitán Benjamin Matthius permita una investigación del
+                                    reciente estallido de
+                                    violencia, pero Matthius se mantiene firme en la creencia de que nada está mal. De
+                                    repente, la nave pilotada por el minero sobreviviente se estrella contra el hangar
+                                    justo cuando corta la comunicación y es asesinado por su esposa transformada en
+                                    necromorfo. Vincent y su
+                                    equipo son enviados para contener la situación, pero no descubren cuerpos a bordo
+                                    del transbordador, aunque sí toman nota de las abundantes cantidades de sangre, y
+                                    luego salen para averiguar qué causó el accidente.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="col-2">
+            </div>
+            <div class="col-4">
+                <h3 class="white"><b>Alissa Vincent</b></h3>
+                <img class="img-alissa" src="./historia_medio_final.jpg">
+
+                <h3 class="white mt-5"><b>Bajas</b></h3>
+                <p class="white">En la enfermería, un hombre se despierta para descubrir criaturas alienígenas mutando
+                    los diversos cadáveres en la morgue, sólo para ser despachado horriblemente momentos después. La
+                    situación se vuelve sombría a través de toda la nave a medida que el caos y el número de cuerpos
+                    aumentan de forma sostenida, creando estragos a medida que Matthius exige orden. Un enfrentamiento
+                    entre Matthius y Kyne lleva al primero a ser asesinado accidentalmente por una aguja sedante que le
+                    metió en el ojo el buen Dr. Kyne, quien luego huye aterrorizado. Vincent y su equipo llegan a la
+                    morgue donde un cadáver recientemente mutado mata a un compañero de equipo antes de ser despachado.
+                </p>
+
+                <h3 class="white"><b>Heroica</b></h3>
+                <p class="white">Todo parece perdido y Vincent se encuentra rodeada de numerosos Necromorfos. Luego
+                    descubre que las criaturas no pueden acercarse al artefacto, pero a la desesperada Vincent ya no le
+                    importa y se quiebra. Estimulada por una breve visión, Vincent deja un registro de video
+                    que detalla todo el calvario vivido hasta ahora y advierte que la Ishimura y el artefacto deben ser
+                    destruidos, y sube el registro a una baliza de socorro cerca en un transbordador derribado. En un
+                    acto final de heroísmo, Vincent se lanza a la carga a través de la multitud de Necromorfos y activa
+                    la baliza de socorro mientras se abre la esclusa de aire, que absorbe tanto la baliza como a los
+                    Necromorfos hacia el vacío.
+                </p>
+
+                <h3 class="white"><b>Final</b></h3>
+                <p class="white"> Vincent trata de aguantar un poco más, pero también es absorbida, aunque
+                    es posible que esto haya sido por elección propia, ya que sus únicas opciones en ese momento eran
+                    eventualmente ser asesinada por un Necromorfo o permanecer cerca del artefacto y morir lentamente de
+                    hambre. A medida que la película llega a su fin, el cadáver de Vincent flota en la oscuridad del
+                    espacio mientras suena la canción Twinkle Twinkle Little Star. La historia termina justo cuando
+                    llega la USG Kellion llega y se prepara para atracar en la
+                    Ishimura, marcando el comienzo de Dead Space.
+                </p>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
 </body>
 
 </html>

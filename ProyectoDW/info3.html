@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enemigos</title>
+    <link rel="shortcut icon" href="./logo.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Saira:wght@300&family=Staatliches&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Quantico&family=Wallpoet&display=swap');
+        @import "compass/css3";
+
+        body {
+            background-image: url(./maxresdefault.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .white {
+            color: white;
+        }
+
+        .black {
+            color: black;
+        }
+
+        h1 {
+            font-family: 'Lexend Giga', sans-serif;
+            font-size: 8rem;
+            animation: fadeInLeft 2s;
+
+        }
+
+        h3,
+        h5,
+        p {
+            font-family: 'Saira', sans-serif;
+            animation: fadeInRight 2s;
+        }
+
+        h4 {
+            font-family: 'Saira', sans-serif;
+            animation: fadeInUp 2s;
+        }
+
+        .img-blur {
+            position: relative;
+            display: inline-block;
+        }
+
+        .img-blur:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            box-shadow: inset 0 0 10px 10px black;
+        }
+
+        .card {
+            background-color: #3333;
+            margin-right: 10px;
+            animation: fadeInRight 2s;
+
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card-img-top2 {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .img-alissa {
+            width: 100%;
+            animation: fadeInRight 2s;
+        }
+
+        @keyframes fadeInRight {
+            0% {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar black mb-5 fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./logo.png" alt="" width="" height="" class="d-inline-block align-text-top">
+            </a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="white text-center mt-5 mb-5"><b>ENEMIGOS</b></h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-6">
+                <div class="card mb-5 mt-5">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./Slasher.webp" class="card-img-top" alt="">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title white"><b>Slasher</b></h5>
+                                <p class="card-text white">La forma más común de Necromorfo, la cual ataca utilizando
+                                    dos hojas largas ubicadas en la manos de éste. Varía de color según la indumentaria
+                                    del humano infectado, poseyendo una variante de color oscuro mucho más fuerte.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card mb-5 mt-5">
+                    <div class="row g-0">
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title white"><b>Leaper</b></h5>
+                                <p class="card-text white">En lugar de piernas tiene una cola larga y fuerte que utiliza
+                                    para afirmarse al moverse. También la emplea para dar saltos y ataques violentos. Su
+                                    punto débil son los brazos. Se puede encontrar en ambientes con gravedad cero.
+                                    También tiene una especie variante, algo más fuerte de color negro.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="./leaper.webp" class="card-img-top" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="card mb-5 mt-5">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./lurker.webp" class="card-img-top" alt="">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title white"><b>Lurker</b></h5>
+                                <p class="card-text white">Fueron bebés que también sufrieron los efectos de la
+                                    infección a bordo de la USG Ishimura. Atacan con los proyectiles que lanzan los 3
+                                    tentáculos que salen de su espalda. Bastante ágiles, pueden desplazarse a través de
+                                    los muros. Tienen una variante de color oscuro difícil de eliminar. Estos enemigos
+                                    pueden maniobrar en gravedad cero.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card mb-5 mt-5">
+                    <div class="row g-0">
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title white"><b>Pregnant</b></h5>
+                                <p class="card-text white">Presenta dos enormes brazos que salen desde su
+                                    espalda, cada una terminando en una gran guadaña de hueso, usada para cortar y
+                                    tajear a un oponente de la misma forma que los Slashers. Los brazos del huésped
+                                    humano son fusionados en un enorme saco que se ha desarrollado en el torso. Éste
+                                    saco guarda a Swarmers dentro. Cuando están muy dañados, los
+                                    Pregnants tienden a abrir sus propios sacos abdominales para liberar su prole, en un
+                                    esfuerzo para asegurar la eliminación de la víctima.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="./Pregnant.webp" class="card-img-top" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="card mb-5 mt-5">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./Infector.webp" class="card-img-top" alt="">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title white"><b>Infector</b></h5>
+                                <p class="card-text white">Son criaturas voladoras parecidas a los murciélagos pero sin
+                                    cabeza y su tamaño supera el metro de largo. Cuentan con un apéndice puntiagudo en
+                                    la parte frontal que clavan en la frente de víctimas muertas para inocularles el
+                                    agente patógeno que los transformará en necromorfos. Pueden desplazarse volando o
+                                    arrastrándose con unas pequeñas patas traseras.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card mb-5 mt-5">
+                    <div class="row g-0">
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title white"><b>Swarmer</b></h5>
+                                <p class="card-text white">Los Swarmer son unos necromorfos diminutos que parecen estar
+                                    compuestos de pequeños pedazos de carne reanimados. Comúnmente se manifiestan entre
+                                    6 y 7 swarmers a la vez, algunos se
+                                    encuentran escondidos en
+                                    cajas o pueden salir de los Pregnant a los que dispares en el abdomen.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="./swarmer.webp" class="card-img-top" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="card mb-5 mt-5">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./Guardian.webp" class="card-img-top" alt="">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title white"><b>Guardian</b></h5>
+                                <p class="card-text white">Un Necromorfo estacionario, se pega a las paredes, tiene seis
+                                    tentáculos y puede expulsar pequeñas criaturas de un solo tentáculo de su estómago
+                                    como forma de defensa. Se puede escuchar desde lejos gimiendo y dando alaridos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card mb-5 mt-5">
+                    <div class="row g-0">
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title white"><b>Brute</b></h5>
+                                <p class="card-text white">Grande, fuerte y blindado, y su armadura lo protege de todo
+                                    ataque en su parte frontal, aplasta a sus enemigos con su gran tamaño y velocidad.
+                                    También tiene una especie negra más poderosa que la estándar y se le encuentra pocas
+                                    veces en el juego.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="./Brute.webp" class="card-img-top" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="card mb-5 mt-5">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./drag_tentacle.webp" class="card-img-top" alt="">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title white"><b>Drag Tentacle</b></h5>
+                                <p class="card-text white">Enorme tentáculo que posee un grumo de color amarillo que
+                                    sale de agujeros en la pared, arrastra a sus víctimas hacia sus muertes dentro de
+                                    dichos agujeros.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card mb-5 mt-5">
+                    <div class="row g-0">
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title white"><b>Pods</b></h5>
+                                <p class="card-text white">Similares a crías, salen del Guardian, aunque no siempre.
+                                    Tienen un tentáculo que lanza dardos a cualquier ser vivo que se acerque.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="./Pods.webp" class="card-img-top" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="card mb-5 mt-5">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./Exploder.webp" class="card-img-top" alt="">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title white"><b>Exploder</b></h5>
+                                <p class="card-text white">Posee una gran pústula de color amarillo colgando de su brazo
+                                    izquierdo, llena de un compuesto orgánico explosivo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card mb-5 mt-5">
+                    <div class="row g-0">
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title white"><b>Wheezer</b></h5>
+                                <p class="card-text white">El único Necromorfo que no ataca directamente. Con los
+                                    pulmones del huésped expandidos y alojados en su espalda, puede intoxicar el aire de
+                                    su medio ambiente. Sólo aparecen en el capítulo 6.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="./Wheezer.webp" class="card-img-top" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="card mb-5 mt-5">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./Twitcher.webp" class="card-img-top" alt="">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title white"><b>Twitcher</b></h5>
+                                <p class="card-text white">Soldado de armadura blanca infectado. Gracias a la
+                                    combinación de los tejidos de Necromorfos y de los dispositivos de estabilización,
+                                    posee una velocidad y habilidad mayor que la de los Necromorfos comunes, lo que lo
+                                    convierte en un enemigo bastante peligroso e impredecible.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card mb-5 mt-5">
+                    <div class="row g-0">
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title white"><b>Divider</b></h5>
+                                <p class="card-text white">Mounstruos altos, fuertes y formados por varios organismos.
+                                    Al desmembrarlo, las partes que los conforman atacarán al personaje..</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="./Divider.webp" class="card-img-top" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6">
+                <div class="card mb-5 mt-5">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./Hunter.webp" class="card-img-top" alt="">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title white"><b>The Hunter</b></h5>
+                                <p class="card-text white">Una aterradora monstruosidad similar a un Slasher producto de
+                                    experimentos del Dr. Challus Mercer (a quien él mismo llama "su creación") con
+                                    humanos. Alto, rápido y regenera sus extremidades, haciendo imposible eliminarlo por
+                                    métodos convencionales. The Hunter acecha a Isaac en los capítulos 5 y 10.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3"></div>
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+    </div>
+    </div>
+    </div>
+
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="card-group">
+                <div class="card">
+                    <img src="./leviathan.jpg" class="card-img-top2" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title white text-center"><b>Leviatán</b></h5>
+                        <p class="card-text white">Necromorfo gigante. Posee una masa próxima a las 10.000 toneladas. Se
+                            encuentra atascado en el almacén de suministros en la sección hidropónica de la nave. Puede
+                            atacar con tentáculos parecidos a los del «Drag Tentacle». Además, arroja cápsulas que
+                            explotan al contacto con la superficie.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./Slug.webp" class="card-img-top2" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title white text-center"><b>Slug</b></h5>
+                        <p class="card-text white">Se encuentra únicamente en una sola escena del juego, en el capítulo
+                            8. Su tamaño alcanza unos 150 m². Cuenta con cinco tentáculos que lanzan escombros y tanques
+                            explosivos.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./GnosisColectiva.webp" class="card-img-top2" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title white text-center"><b>Gnosis Colectiva</b></h5>
+                        <p class="card-text white">El enemigo final del juego y la aparente raíz de todo los males ya
+                            que controla mentalmente a los demás Necromorfos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
